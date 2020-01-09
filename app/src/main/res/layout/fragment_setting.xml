@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.fragment.SettingFragment">
+
+    <data></data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/light_gray"
+            android:orientation="vertical">
+
+            <com.example.custom.CustomTextViewBlack
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/common_16_dp"
+                android:layout_marginTop="@dimen/common_20_dp"
+                android:text="@string/pray_now"
+                android:textColor="@color/black"
+                android:textSize="@dimen/common_20_dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_1_dp"
+                android:background="@color/gray"></View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/showDescLL"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.example.custom.CustomTextViewBlack
+                        android:layout_width="@dimen/common_0_dp"
+                        android:layout_height="@dimen/common_50_dp"
+                        android:layout_marginLeft="@dimen/common_16_dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="@string/show_desc"
+                        android:textColor="@color/black" />
+
+                    <com.example.custom.CustomTextViewBlack
+                        android:id="@+id/showDesc"
+                        android:layout_width="@dimen/common_0_dp"
+                        android:layout_height="@dimen/common_50_dp"
+                        android:layout_marginRight="@dimen/common_16_dp"
+                        android:layout_weight="1"
+                        android:drawablePadding="@dimen/common_5_dp"
+                        android:drawableRight="@drawable/right_arrow_home"
+                        android:gravity="center_vertical|right"
+                        android:singleLine="true"
+                        android:textColor="@color/setting_txt_color" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/common_1_dp"
+                    android:background="@color/gray"></View>
+
+                <LinearLayout
+                    android:id="@+id/prayerTimeLL"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.example.custom.CustomTextViewBlack
+                        android:layout_width="@dimen/common_0_dp"
+                        android:layout_height="@dimen/common_50_dp"
+                        android:layout_marginLeft="@dimen/common_16_dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="@string/prayer_time"
+                        android:textColor="@color/black" />
+
+                    <com.example.custom.CustomTextViewBlack
+                        android:id="@+id/prayerTime"
+                        android:layout_width="@dimen/common_0_dp"
+                        android:layout_height="@dimen/common_50_dp"
+                        android:layout_marginRight="@dimen/common_16_dp"
+                        android:layout_weight="1"
+                        android:drawablePadding="@dimen/common_5_dp"
+                        android:drawableRight="@drawable/right_arrow_home"
+                        android:gravity="center_vertical|right"
+                        android:textColor="@color/setting_txt_color" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_1_dp"
+                android:background="@color/gray"></View>
+
+            <com.example.custom.CustomTextViewBlack
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/common_16_dp"
+                android:layout_marginRight="@dimen/common_16_dp"
+                android:layout_marginTop="@dimen/common_50_dp"
+                android:gravity="center_vertical"
+                android:text="@string/your_prayer"
+                android:textColor="@color/black"
+                android:textSize="@dimen/common_20_dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_1_dp"
+                android:background="@color/gray"></View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/setOrderLL"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.example.custom.CustomTextViewBlack
+                        android:layout_width="@dimen/common_0_dp"
+                        android:layout_height="@dimen/common_50_dp"
+                        android:layout_marginLeft="@dimen/common_16_dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="@string/set_order"
+                        android:textColor="@color/black" />
+
+                    <com.example.custom.CustomTextViewBlack
+                        android:id="@+id/setOrder"
+                        android:layout_width="@dimen/common_0_dp"
+                        android:layout_height="@dimen/common_50_dp"
+                        android:layout_marginRight="@dimen/common_16_dp"
+                        android:layout_weight="1"
+                        android:drawablePadding="@dimen/common_5_dp"
+                        android:drawableRight="@drawable/right_arrow_home"
+                        android:gravity="center_vertical|right"
+                        android:textColor="@color/setting_txt_color" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_1_dp"
+                android:background="@color/gray"></View>
+
+            <com.example.custom.CustomTextViewBlack
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/common_16_dp"
+                android:layout_marginRight="@dimen/common_16_dp"
+                android:layout_marginTop="@dimen/common_50_dp"
+                android:gravity="center_vertical"
+                android:text="@string/reminder_"
+                android:textColor="@color/black"
+                android:textSize="@dimen/common_20_dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_1_dp"
+                android:background="@color/gray"></View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/reminderTypeLL"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="horizontal">
+
+                    <com.example.custom.CustomTextViewBlack
+                        android:layout_width="@dimen/common_0_dp"
+                        android:layout_height="@dimen/common_50_dp"
+                        android:layout_marginLeft="@dimen/common_16_dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="@string/reminder_type"
+                        android:textColor="@color/black" />
+
+                    <com.example.custom.CustomTextViewBlack
+                        android:id="@+id/reminderType"
+                        android:layout_width="@dimen/common_0_dp"
+                        android:layout_height="@dimen/common_50_dp"
+                        android:layout_marginRight="@dimen/common_16_dp"
+                        android:layout_weight="1"
+                        android:drawablePadding="@dimen/common_5_dp"
+                        android:drawableRight="@drawable/right_arrow_home"
+                        android:gravity="center_vertical|right"
+                        android:textColor="@color/setting_txt_color" />
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/reminderView"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/common_1_dp"
+                    android:layout_below="@+id/reminderTypeLL"
+                    android:background="@color/gray"></View>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_1_dp"
+                android:background="@color/gray"></View>
+
+            <com.example.custom.CustomTextViewBlack
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/common_16_dp"
+                android:layout_marginRight="@dimen/common_16_dp"
+                android:layout_marginTop="@dimen/common_50_dp"
+                android:gravity="center_vertical"
+                android:text="@string/your_account"
+                android:textColor="@color/black"
+                android:textSize="@dimen/common_20_dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_1_dp"
+                android:background="@color/gray"></View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <com.example.custom.CustomTextViewBlack
+                    android:id="@+id/changeName"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/common_50_dp"
+                    android:layout_marginLeft="@dimen/common_16_dp"
+                    android:layout_marginRight="@dimen/common_16_dp"
+                    android:drawableRight="@drawable/right_arrow_home"
+                    android:gravity="center_vertical"
+                    android:text="@string/app_name"
+                    android:textColor="@color/black"
+                     />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/common_1_dp"
+                    android:background="@color/gray"></View>
+
+                <com.example.custom.CustomTextViewBlack
+                    android:id="@+id/changePassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/common_50_dp"
+                    android:layout_marginLeft="@dimen/common_16_dp"
+                    android:layout_marginRight="@dimen/common_16_dp"
+                    android:drawableRight="@drawable/right_arrow_home"
+                    android:gravity="center_vertical"
+                    android:text="@string/account_password"
+                    android:textColor="@color/black" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/common_1_dp"
+                    android:background="@color/gray"></View>
+
+                <com.example.custom.CustomTextViewBlack
+                    android:id="@+id/legal"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/common_40_dp"
+                    android:layout_marginLeft="@dimen/common_16_dp"
+                    android:layout_marginRight="@dimen/common_16_dp"
+                    android:drawableRight="@drawable/right_arrow_home"
+                    android:gravity="center_vertical"
+                    android:text="@string/legal"
+                    android:textColor="@color/black" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/common_1_dp"
+                    android:background="@color/gray"></View>
+
+                <com.example.custom.ButtonTextBlack
+                    android:id="@+id/logout"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/common_50_dp"
+                    android:layout_marginLeft="@dimen/common_16_dp"
+                    android:layout_marginRight="@dimen/common_16_dp"
+                    android:background="@color/trans"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="@string/logout"
+                    android:textColor="@color/colorPrimary" />
+            </LinearLayout>
+
+            <com.example.custom.CustomTextViewBlack
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/common_16_dp"
+                android:layout_marginRight="@dimen/common_16_dp"
+                android:layout_marginTop="@dimen/common_50_dp"
+                android:gravity="center_vertical"
+                android:text="@string/share"
+                android:textSize="@dimen/common_20_dp"
+                android:textColor="@color/black" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/common_16_dp">
+
+                <ImageButton
+                    android:id="@+id/shareFacebook"
+                    android:layout_width="@dimen/common_100_dp"
+                    android:layout_height="@dimen/common_100_dp"
+                    android:layout_alignParentLeft="true"
+                    android:background="@drawable/facebook" />
+
+                <ImageButton
+                    android:id="@+id/shareTwitter"
+                    android:layout_width="@dimen/common_100_dp"
+                    android:layout_height="@dimen/common_100_dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/twitter" />
+
+                <ImageButton
+                    android:id="@+id/shareMail"
+                    android:layout_width="@dimen/common_100_dp"
+                    android:layout_height="@dimen/common_100_dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/mail" />
+            </RelativeLayout>
+
+            <com.example.custom.CustomTextViewBlack
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/common_16_dp"
+                android:layout_marginLeft="@dimen/common_16_dp"
+                android:layout_marginRight="@dimen/common_16_dp"
+                android:drawableRight="@drawable/right_arrow_home"
+                android:gravity="center_vertical"
+                android:text="In the event that God is utilizing Lift up my Heart in your life, take a moment and impart it to world! You have various approaches to share, so make sure to spread the world!" />
+
+            <ImageButton
+                android:id="@+id/whatNew"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_150_dp"
+                android:layout_margin="@dimen/common_16_dp"
+                android:background="@drawable/whatsnew"
+                android:scaleType="fitXY" />
+        </LinearLayout>
+    </ScrollView>
+</layout>

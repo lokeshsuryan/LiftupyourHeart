@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.fragment.SettingFragment">
+
+    <data></data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/light_gray"
+        android:orientation="vertical">
+
+
+        <com.example.custom.CustomTextViewBlack
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/common_16_dp"
+            android:layout_marginTop="@dimen/common_20_dp"
+            android:text="@string/short_order"
+            android:textAllCaps="true"
+            android:textColor="@color/black" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_1_dp"
+            android:background="@color/gray"></View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/common_16_dp"
+            android:paddingRight="@dimen/common_16_dp">
+
+            <RelativeLayout
+                android:id="@+id/alphaRL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <com.example.custom.CustomTextViewBlack
+                    android:id="@+id/alpha"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/common_50_dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/alpha"
+                    android:textColor="@color/black" />
+
+                <ImageView
+                    android:id="@+id/alphaIV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_1_dp"
+                android:background="@color/gray"></View>
+
+            <RelativeLayout
+                android:id="@+id/newestRL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <com.example.custom.CustomTextViewBlack
+                    android:id="@+id/newest"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/common_50_dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/newest"
+                    android:textColor="@color/black" />
+
+                <ImageView
+                    android:id="@+id/newestIV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_1_dp"
+                android:background="@color/gray"></View>
+            <RelativeLayout
+                android:id="@+id/oldestRL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <com.example.custom.CustomTextViewBlack
+                    android:id="@+id/oldest"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/common_50_dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/oldest_first"
+                    android:textColor="@color/black" />
+
+                <ImageView
+                    android:id="@+id/oldestIV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_1_dp"
+                android:background="@color/gray"></View>
+            <RelativeLayout
+                android:id="@+id/manualRL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <com.example.custom.CustomTextViewBlack
+                    android:id="@+id/manual"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/common_50_dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/manual"
+                    android:textColor="@color/black" />
+
+                <ImageView
+                    android:id="@+id/manualIV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_1_dp"
+            android:background="@color/gray"></View>
+
+    </LinearLayout>
+</layout>
+

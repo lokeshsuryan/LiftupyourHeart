@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.fragment.SettingFragment">
+
+    <data></data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/light_gray"
+        android:orientation="vertical">
+
+
+        <com.example.custom.CustomTextViewBlack
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/common_16_dp"
+            android:layout_marginTop="@dimen/common_20_dp"
+            android:text="@string/prayer_time"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/h20" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_1_dp"
+            android:background="@color/gray"></View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/tmerfinishNotiLL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.example.custom.CustomTextViewBlack
+                    android:layout_width="@dimen/common_0_dp"
+                    android:layout_height="@dimen/common_50_dp"
+                    android:layout_marginLeft="@dimen/common_16_dp"
+                    android:layout_weight="1.3"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/h16"
+                    android:text="@string/timer_finish_noti"
+                    android:singleLine="true"
+                    android:textColor="@color/black" />
+
+                <com.example.custom.CustomTextViewBlack
+                    android:id="@+id/timeFinishNotiTV"
+                    android:layout_width="@dimen/common_0_dp"
+                    android:layout_height="@dimen/common_50_dp"
+                    android:layout_marginRight="@dimen/common_16_dp"
+                    android:layout_weight=".7"
+                    android:drawablePadding="@dimen/common_5_dp"
+                    android:drawableRight="@drawable/right_arrow_home"
+                    android:gravity="center_vertical|right"
+                    android:singleLine="true"
+                    android:textColor="@color/setting_txt_color" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_1_dp"
+                android:background="@color/gray"></View>
+
+            <LinearLayout
+                android:id="@+id/advanceAutoLL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.example.custom.CustomTextViewBlack
+                    android:layout_width="@dimen/common_0_dp"
+                    android:layout_height="@dimen/common_50_dp"
+                    android:layout_marginLeft="@dimen/common_16_dp"
+                    android:layout_weight="1.1"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/h16"
+                    android:text="@string/advance"
+                    android:singleLine="true"
+                    android:textColor="@color/black" />
+
+                <RelativeLayout
+                    android:layout_width="@dimen/common_0_dp"
+                    android:layout_height="@dimen/common_50_dp"
+                    android:gravity="right"
+                    android:layout_weight=".9"
+                    android:layout_marginRight="@dimen/common_16_dp"
+                    >
+
+                    <ToggleButton
+                        android:id="@+id/advanceAutoTB"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textOn=""
+                        android:textOff=""
+                        android:layout_toLeftOf="@+id/prayerTime"
+                        android:background="@drawable/toggle_selector" />
+
+                    <com.example.custom.CustomTextViewBlack
+                        android:id="@+id/prayerTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="@dimen/common_5_dp"
+                        android:text=""
+                        android:singleLine="true"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:drawableRight="@drawable/right_arrow_home"
+                        android:gravity="center_vertical|right" />
+                </RelativeLayout>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_1_dp"
+                android:background="@color/gray"></View>
+            <LinearLayout
+                android:id="@+id/howLongLL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.example.custom.CustomTextViewBlack
+                    android:layout_width="@dimen/common_0_dp"
+                    android:layout_height="@dimen/common_50_dp"
+                    android:layout_marginLeft="@dimen/common_16_dp"
+                    android:layout_weight="1.1"
+                    android:gravity="center_vertical"
+                    android:text="@string/long_per_prayer"
+                    android:textSize="@dimen/h16"
+                    android:singleLine="true"
+                    android:textColor="@color/black" />
+
+                <com.example.custom.CustomTextViewBlack
+                    android:id="@+id/howLongTV"
+                    android:layout_width="@dimen/common_0_dp"
+                    android:layout_height="@dimen/common_50_dp"
+                    android:layout_marginRight="@dimen/common_16_dp"
+                    android:layout_weight=".9"
+                    android:drawablePadding="@dimen/common_5_dp"
+                    android:drawableRight="@drawable/right_arrow_home"
+                    android:gravity="center_vertical|right"
+                    android:singleLine="true"
+                    android:textColor="@color/setting_txt_color" />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_1_dp"
+                android:background="@color/gray"></View>
+            <LinearLayout
+                android:id="@+id/nextPrayerNotiLL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.example.custom.CustomTextViewBlack
+                    android:layout_width="@dimen/common_0_dp"
+                    android:layout_height="@dimen/common_50_dp"
+                    android:layout_marginLeft="@dimen/common_16_dp"
+                    android:layout_weight="1.1"
+                    android:gravity="center_vertical"
+                    android:text="@string/next_prayer_noti"
+                    android:textSize="@dimen/h16"
+                    android:singleLine="true"
+                    android:textColor="@color/black" />
+
+                <com.example.custom.CustomTextViewBlack
+                    android:id="@+id/nextPrayerNotiTV"
+                    android:layout_width="@dimen/common_0_dp"
+                    android:layout_height="@dimen/common_50_dp"
+                    android:layout_marginRight="@dimen/common_16_dp"
+                    android:layout_weight=".9"
+                    android:drawablePadding="@dimen/common_5_dp"
+                    android:drawableRight="@drawable/right_arrow_home"
+                    android:gravity="center_vertical|right"
+                    android:singleLine="true"
+                    android:textColor="@color/setting_txt_color" />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_1_dp"
+                android:background="@color/gray"></View>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

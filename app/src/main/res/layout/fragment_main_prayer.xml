@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data></data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/screenbg_signup"
+        android:orientation="vertical">
+
+       <androidx.viewpager.widget.ViewPager
+           android:id="@+id/prayerVP"
+           android:layout_width="match_parent"
+           android:layout_above="@+id/viewDesc"
+           android:layout_height="wrap_content"></androidx.viewpager.widget.ViewPager>
+
+        <com.example.custom.ButtonTextBlack
+            android:id="@+id/viewDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/common_30_dp"
+            android:layout_marginRight="@dimen/common_30_dp"
+            android:layout_marginBottom="@dimen/common_16_dp"
+            android:text="@string/view_desc"
+            android:layout_alignParentBottom="true"
+            android:textColor="@color/white"
+            android:visibility="gone"
+            android:background="@drawable/sinup_rounded_button"
+            android:textSize="@dimen/h16" />
+        <RelativeLayout
+            android:id="@+id/loaderLayoutPrayerMain"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:visibility="gone">
+
+            <ProgressBar
+                android:layout_width="@dimen/common_50_dp"
+                android:layout_height="@dimen/common_50_dp"
+                android:layout_centerInParent="true" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+</layout>

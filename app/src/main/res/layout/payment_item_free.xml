@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="20dp"
+        android:background="@drawable/shape"
+        app:cardPreventCornerOverlap="false"
+        app:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/common_10_dp"
+            android:orientation="vertical">
+
+
+
+            <com.example.custom.CustomTextViewBold
+                android:id="@+id/basic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/basic"
+                android:textColor="@color/black" />
+
+            <com.example.custom.CustomTextViewBold
+                android:id="@+id/free"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/common_10_dp"
+                android:text="@string/free"
+                android:layout_below="@+id/basic"
+                android:textColor="@color/black"
+                android:textSize="35sp" />
+
+            <com.example.custom.CustomTextViewBold
+                android:id="@+id/firstFree"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/free"
+                android:layout_marginTop="@dimen/common_30_dp"
+                android:drawableLeft="@drawable/dot_red"
+                android:drawablePadding="@dimen/common_10_dp"
+                android:text="@string/first_free"
+                android:textColor="@color/black" />
+            <com.example.custom.ButtonMediumText
+                android:id="@+id/monthPlan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/common_20_dp"
+                android:background="@color/white"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/common_10_dp"
+                android:layout_marginRight="@dimen/common_10_dp"
+                android:layout_marginBottom="@dimen/common_10_dp"
+                android:paddingLeft="@dimen/common_10_dp"
+                android:paddingRight="@dimen/common_10_dp"
+                android:text="@string/month_plan"
+                android:visibility="gone"
+                android:textColor="@color/red" />
+            <com.example.custom.ButtonMediumText
+                android:id="@+id/getStarted"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/common_20_dp"
+                android:background="@color/red"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="@dimen/common_20_dp"
+                android:paddingLeft="@dimen/common_15_dp"
+                android:paddingRight="@dimen/common_15_dp"
+                android:text="@string/get_started_"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</FrameLayout>

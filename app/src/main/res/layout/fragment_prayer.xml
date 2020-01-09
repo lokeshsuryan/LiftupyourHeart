@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/screenbg_signup"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/bottomRl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/sky_blue"
+            android:padding="@dimen/common_10_dp">
+
+            <ImageButton
+                android:id="@+id/homeIB"
+                android:layout_width="@dimen/common_50_dp"
+                android:layout_height="@dimen/common_50_dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/home" />
+
+            <ImageButton
+                android:id="@+id/upDownIB"
+                android:layout_width="@dimen/common_50_dp"
+                android:layout_height="@dimen/common_50_dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/up_down" />
+        </RelativeLayout>
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/allReminder"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/newReminderOrPrayer"
+            android:layout_below="@+id/allReminderDummy"
+            android:layout_marginLeft="@dimen/common_16_dp"
+            android:layout_marginTop="@dimen/common_16_dp"
+            android:layout_marginRight="@dimen/common_16_dp"
+            android:background="@color/trans">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <com.example.custom.ButtonMediumText
+            android:id="@+id/newReminderOrPrayer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/bottomRl"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/common_50_dp"
+            android:layout_marginTop="@dimen/common_20_dp"
+            android:layout_marginRight="@dimen/common_50_dp"
+            android:layout_marginBottom="@dimen/common_10_dp"
+            android:background="@drawable/sinup_rounded_button"
+            android:text="@string/add_new_reminder"
+            android:textColor="@color/white"
+            android:textSize="@dimen/h20"
+            android:textStyle="bold" />
+
+        <com.example.custom.CustomTextViewBlack
+            android:id="@+id/allReminderDummy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/toolbar"
+            android:layout_marginLeft="@dimen/common_16_dp"
+            android:layout_marginTop="@dimen/common_16_dp"
+            android:alpha="5"
+            android:text="@string/all_reminder"
+            android:textColor="@color/black" />
+        <RelativeLayout
+            android:id="@+id/loaderLayoutPrayer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:visibility="gone">
+
+            <ProgressBar
+                android:layout_width="@dimen/common_50_dp"
+                android:layout_height="@dimen/common_50_dp"
+                android:layout_centerInParent="true" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <data></data>
+</layout>

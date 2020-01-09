@@ -1,0 +1,1 @@
+[{"outputType":{"type":"AAPT_FRIENDLY_MERGED_MANIFESTS"},"apkInfo":{"type":"MAIN","splits":[],"versionCode":109,"versionName":"3.7.1-SNAPSHOT","enabled":true,"outputFile":"TestUtils-debug.aar","fullName":"debug","baseName":"debug"},"path":"AndroidManifest.xml","properties":{"packageId":"com.braintreepayments.api.testutils","split":""}}]

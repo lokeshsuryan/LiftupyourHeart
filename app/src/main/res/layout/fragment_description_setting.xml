@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.fragment.SettingFragment">
+
+    <data></data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/light_gray"
+        android:orientation="vertical">
+
+
+        <com.example.custom.CustomTextViewBlack
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/common_16_dp"
+            android:layout_marginTop="@dimen/common_20_dp"
+            android:text="@string/show_desc"
+            android:textAllCaps="true"
+            android:textColor="@color/black" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_1_dp"
+            android:background="@color/gray"></View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/common_16_dp"
+            android:paddingRight="@dimen/common_16_dp">
+
+            <RelativeLayout
+                android:id="@+id/alwaysRL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <com.example.custom.CustomTextViewBlack
+
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/common_50_dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/always"
+                    android:textColor="@color/black" />
+
+                <ImageView
+                    android:id="@+id/alwaysIV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_1_dp"
+                android:background="@color/gray"></View>
+
+            <RelativeLayout
+                android:id="@+id/neverRL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <com.example.custom.CustomTextViewBlack
+                    android:id="@+id/never"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/common_50_dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/never"
+                    android:textColor="@color/black" />
+
+                <ImageView
+                    android:id="@+id/neverIV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_1_dp"
+                android:background="@color/gray"></View>
+            <RelativeLayout
+                android:id="@+id/askRL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <com.example.custom.CustomTextViewBlack
+                    android:id="@+id/ask"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/common_50_dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/ask"
+                    android:textColor="@color/black" />
+
+                <ImageView
+                    android:id="@+id/askIV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_1_dp"
+            android:background="@color/gray"></View>
+
+    </LinearLayout>
+</layout>

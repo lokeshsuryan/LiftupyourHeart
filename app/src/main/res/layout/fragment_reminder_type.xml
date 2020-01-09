@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.fragment.SettingFragment">
+
+    <data></data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/light_gray"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_1_dp"
+            android:background="@color/gray"></View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/common_16_dp"
+            android:paddingRight="@dimen/common_16_dp">
+
+            <RelativeLayout
+                android:id="@+id/pushNotiRL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <com.example.custom.CustomTextViewBlack
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/common_50_dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/push_noti"
+                    android:textSize="@dimen/h16"
+                    android:textColor="@color/black" />
+
+                <ImageView
+                    android:id="@+id/pushIV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_1_dp"
+                android:background="@color/gray"></View>
+
+            <RelativeLayout
+                android:id="@+id/emailReminderRL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <com.example.custom.CustomTextViewBlack
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/common_50_dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/email"
+                    android:textSize="@dimen/h16"
+                    android:textColor="@color/black" />
+
+                <ImageView
+                    android:id="@+id/emailIV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_1_dp"
+                android:background="@color/gray"></View>
+            <RelativeLayout
+                android:id="@+id/bothReminderRL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <com.example.custom.CustomTextViewBlack
+                    android:id="@+id/oldest"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/common_50_dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/both"
+                    android:textSize="@dimen/h16"
+                    android:textColor="@color/black" />
+
+                <ImageView
+                    android:id="@+id/bothIV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_1_dp"
+            android:background="@color/gray"></View>
+        <com.example.custom.CustomTextViewBlack
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/common_16_dp"
+            android:layout_marginTop="@dimen/common_20_dp"
+            android:text="@string/reminder_type"
+            android:textAllCaps="true"
+            android:textSize="@dimen/h18"
+            android:textColor="@color/black" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_1_dp"
+            android:background="@color/gray"></View>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:background="@color/white"
+            android:paddingLeft="@dimen/common_16_dp"
+            android:paddingRight="@dimen/common_16_dp"
+            android:orientation="horizontal">
+
+            <com.example.custom.CustomTextViewBlack
+
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_50_dp"
+                android:gravity="center_vertical"
+                android:text="@string/rece_emails"
+                android:textSize="@dimen/h16"
+                android:textColor="@color/black" />
+
+            <ToggleButton
+                android:id="@+id/recevingEmailTB"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/common_40_dp"
+                android:layout_centerVertical="true"
+                android:textOn=""
+                android:textOff=""
+                android:layout_margin="@dimen/common_5_dp"
+                android:background="@drawable/toggle_selector"
+                android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_1_dp"
+            android:background="@color/gray"></View>
+
+        <com.example.custom.CustomTextViewBlack
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_margin="@dimen/common_16_dp"
+            android:text="You are set up to get message at abc@cc.com. in tthe vent that you need to delay them in the event that you are out of town, or won,t check"
+             />
+    </LinearLayout>
+</layout>
+
+

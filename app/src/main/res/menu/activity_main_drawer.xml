@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <item android:title="@string/pray_now">
+        <menu>
+            <item
+                android:id="@+id/showDesc"
+                android:icon="@drawable/ic_navigate_next_white"
+                android:title="@string/show_desc" />
+            <item
+                android:id="@+id/prayerTime"
+                android:icon="@drawable/ic_navigate_next_white"
+                android:title="@string/prayer_time" />
+        </menu>
+    </item>
+
+
+    <item android:title="@string/your_prayer">
+        <menu>
+            <item
+                android:id="@+id/setOrders"
+                android:icon="@drawable/ic_navigate_next_white"
+                android:title="@string/set_order" />
+        </menu>
+    </item>
+    <item android:title="@string/reminder_caps">
+        <menu>
+            <item
+                android:id="@+id/reminderType"
+                android:icon="@drawable/ic_navigate_next_white"
+                android:title="@string/reminder_type" />
+        </menu>
+    </item>
+    <item android:title="@string/your_account">
+        <menu>
+            <item
+                android:id="@+id/accountName"
+                android:icon="@drawable/ic_navigate_next_white"
+                android:title="@string/your_account" />
+            <item
+                android:id="@+id/changePassword"
+                android:icon="@drawable/ic_navigate_next_white"
+                android:title="@string/account_password" />
+            <item
+                android:id="@+id/legal"
+                android:icon="@drawable/ic_navigate_next_white"
+                android:title="@string/legal" />
+            <item
+                android:id="@+id/logout"
+                android:icon="@drawable/ic_navigate_next_white"
+                android:title="@string/logout" />
+
+
+        </menu>
+    </item>
+   <!-- <group android:checkableBehavior="single" >
+        <item
+            android:id="@+id/nav_home"
+            android:actionLayout="@layout/navigation_icon"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="@string/menu_gallery" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/menu_slideshow" />
+        <item
+            android:id="@+id/nav_tools"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="@string/menu_tools" />
+    </group>-->
+
+
+
+</menu>

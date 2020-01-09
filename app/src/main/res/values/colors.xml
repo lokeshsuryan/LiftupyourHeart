@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="red">#e22727</color>
+    <color name="dark_blue">#19306f</color>
+    <color name="actionBarColor">#FF4081</color>
+    <color name="white">#FFFFFF</color>
+    <color name="white_opecity">#f2f2f2</color>
+    <color name="black">#000000</color>
+    <color name="trans">#00000000</color>
+    <color name="blue">#3370ff</color>
+    <color name="yellow">#eebb44</color>
+    <color name="gray">#999999</color>
+    <color name="gray_trans">#25000000</color>
+    <color name="sky_blue">#6DCCFC</color>
+    <color name="gray_light">#a6a6a6</color>
+    <color name="light_gray">#997878</color>
+    <color name="black_overlay">#66000000</color>
+    <color name="setting_txt_color">#af2141</color>
+
+    <array name="itemColor">
+        <item>#8476FF</item>
+        <item>#6DCCFC</item>
+        <item>#0AE299</item>
+        <item>#F9BB4C</item>
+        <item>#EE5953</item>
+        <item>#D155F3</item>
+    </array>
+
+</resources>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_vertical"
+    android:background="@drawable/screenbg_signup"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:visibility="visible">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_0_dp"
+        android:layout_weight="0.6"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="@dimen/common_150_dp"
+            android:layout_height="@dimen/common_150_dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="@dimen/common_20_dp"
+            app:srcCompat="@drawable/logo_lumh" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_0_dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <com.example.custom.CustomTextViewBold
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:text="@string/welcome_to"
+            android:textColor="@color/white"
+            android:textSize="@dimen/common_30_dp" />
+
+        <com.example.custom.CustomTextViewBold
+            android:id="@+id/liftUpMyHeart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:textColor="@color/white"
+            android:textSize="@dimen/common_30_dp" />
+
+        <com.example.custom.CustomTextViewBold
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="@dimen/common_10_dp"
+            android:text="@string/Bringing_you_closer"
+            android:textColor="@color/white"
+            android:textSize="@dimen/common_30_dp" />
+
+        <com.example.custom.CustomTextViewBold
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/common_30_dp"
+            android:gravity="center_horizontal"
+            android:text="@string/signup_to_get"
+            android:textColor="@color/white" />
+
+        <LinearLayout
+            android:id="@+id/buttonLL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/common_25_dp"
+            android:layout_marginBottom="@dimen/common_20_dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <com.example.custom.ButtonViewBold
+                android:id="@+id/signupBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_corner_blue"
+                android:onClick="loginMethod"
+                android:paddingLeft="@dimen/common_20_dp"
+                android:paddingRight="@dimen/common_20_dp"
+                android:text="@string/signup"
+                android:textColor="@color/white"
+                android:textSize="@dimen/common_20_dp" />
+
+            <com.example.custom.ButtonViewBold
+                android:id="@+id/loginBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/common_20_dp"
+                android:background="@drawable/rounded_corner_yellow"
+                android:onClick="loginMethod"
+                android:paddingLeft="@dimen/common_20_dp"
+                android:paddingRight="@dimen/common_20_dp"
+                android:text="@string/login"
+                android:textColor="@color/white"
+                android:textSize="@dimen/common_20_dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <!--End of Login-->
+</LinearLayout>

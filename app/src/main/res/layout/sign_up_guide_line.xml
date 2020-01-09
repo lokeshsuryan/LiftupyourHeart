@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data></data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible">
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/pagerSignUp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fitsSystemWindows="true"
+                tools:listitem="@layout/pager_item" />
+
+
+            <LinearLayout
+                android:id="@+id/viewPagerCountDots"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/common_25_dp"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+            </LinearLayout>
+        </RelativeLayout>
+        <!--Login button-->
+
+
+    <!--for signup-->
+    <LinearLayout
+        android:id="@+id/linearLayoutPopUp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/screenbg_signup"
+        android:orientation="vertical"
+        android:visibility="invisible">
+
+        <com.example.custom.ButtonViewBold
+            android:id="@+id/closeView"
+            android:layout_width="@dimen/common_30_dp"
+            android:layout_height="@dimen/common_30_dp"
+            android:layout_gravity="right"
+            android:layout_margin="@dimen/common_20_dp"
+            android:background="@drawable/cancel_button" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardViewSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_marginLeft="@dimen/common_20_dp"
+            android:layout_marginTop="@dimen/common_50_dp"
+            android:layout_marginRight="@dimen/common_20_dp"
+            android:layout_marginBottom="@dimen/common_20_dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="vertical"
+            card_view:cardCornerRadius="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.example.custom.CustomEditTextBold
+                        android:id="@+id/firstName"
+                        android:layout_width="@dimen/common_0_dp"
+                        android:layout_height="@dimen/common_40_dp"
+                        android:layout_marginTop="@dimen/common_20_dp"
+                        android:layout_weight="1"
+                        android:background="@color/trans"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:hint="@string/first_name"
+                        android:singleLine="true" />
+
+                    <View
+                        android:layout_width="@dimen/common_1_dp"
+                        android:layout_height="@dimen/common_60_dp"
+                        android:background="@color/gray"></View>
+
+                    <com.example.custom.CustomEditTextBold
+                        android:id="@+id/lastname"
+                        android:layout_width="@dimen/common_0_dp"
+                        android:layout_height="@dimen/common_40_dp"
+                        android:layout_marginTop="@dimen/common_20_dp"
+                        android:layout_weight="1"
+                        android:background="@color/trans"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:hint="@string/last_name"
+                        android:singleLine="true" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/common_1_dp"
+                    android:background="@color/gray"></View>
+
+                <com.example.custom.CustomEditTextBold
+                    android:id="@+id/emailId"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/common_60_dp"
+                    android:background="@color/trans"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:hint="@string/email_id"
+                    android:singleLine="true" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/common_1_dp"
+                    android:background="@color/gray"></View>
+
+                <com.example.custom.CustomEditTextBold
+                    android:id="@+id/passWord"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/common_60_dp"
+                    android:background="@color/trans"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:hint="@string/pass"
+                    android:inputType="textPassword"
+                    android:singleLine="true" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/common_1_dp"
+                    android:background="@color/gray"></View>
+
+                <com.example.custom.CustomEditTextBold
+                    android:id="@+id/phoneNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/common_60_dp"
+                    android:background="@color/trans"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:hint="@string/phone_no"
+                    android:inputType="number"
+                    android:singleLine="true" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardViewLoginUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_marginLeft="@dimen/common_20_dp"
+            android:layout_marginTop="@dimen/common_50_dp"
+            android:layout_marginRight="@dimen/common_20_dp"
+            android:layout_marginBottom="@dimen/common_20_dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="vertical"
+            android:visibility="gone"
+            card_view:cardCornerRadius="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.example.custom.CustomEditTextBold
+                    android:id="@+id/emailIdLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/common_40_dp"
+                    android:layout_marginTop="@dimen/common_20_dp"
+                    android:background="@color/trans"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:hint="@string/email_id"
+                    android:singleLine="true" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/common_1_dp"
+                    android:background="@color/gray"></View>
+
+                <com.example.custom.CustomEditTextBold
+                    android:id="@+id/passWordLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/common_40_dp"
+                    android:layout_marginTop="@dimen/common_20_dp"
+                    android:background="@color/trans"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:hint="@string/pass"
+                    android:inputType="textPassword"
+                    android:singleLine="true" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <com.example.custom.ButtonMediumText
+            android:id="@+id/signUp"
+            android:layout_width="@dimen/common_170_dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/common_20_dp"
+            android:background="@drawable/sinup_rounded_button"
+            android:text="@string/title_activity_login"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <com.example.custom.CustomTextViewBlack
+            android:id="@+id/termCondition"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/common_20_dp"
+            android:layout_marginTop="@dimen/common_10_dp"
+            android:layout_marginRight="@dimen/common_20_dp"
+            android:layout_marginBottom="@dimen/common_10_dp"
+            android:gravity="center_horizontal" />
+    </LinearLayout>
+    <!--end of sigup-->
+
+    <RelativeLayout
+        android:id="@+id/loaderLayoutSP"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:layout_width="@dimen/common_50_dp"
+            android:layout_height="@dimen/common_50_dp"
+            android:layout_centerInParent="true" />
+
+    </RelativeLayout>
+</FrameLayout></layout>

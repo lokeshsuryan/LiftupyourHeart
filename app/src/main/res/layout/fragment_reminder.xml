@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.fragment.AddPrayerFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/screenbg_signup"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/actionBar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_marginTop="@dimen/common_10_dp">
+
+            <com.example.custom.ButtonTextBlack
+                android:id="@+id/cancelBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/common_10_dp"
+                android:background="@color/trans"
+                android:text="@string/cancel_"
+                android:textColor="@color/white" />
+
+            <com.example.custom.ButtonTextBlack
+                android:id="@+id/doneBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/common_10_dp"
+                android:background="@color/trans"
+                android:text="@string/done"
+                android:textColor="@color/white" />
+
+
+        </RelativeLayout>
+
+
+
+        <com.example.custom.ButtonMediumText
+            android:id="@+id/removeReminder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_margin="@dimen/common_20_dp"
+            android:background="@drawable/sinup_rounded_button"
+            android:text="@string/remove_reminder"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <com.example.custom.CustomTextViewBlack
+            android:id="@+id/dummyTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/prayerForReminder"
+            android:layout_marginLeft="@dimen/common_16_dp"
+            android:layout_marginTop="@dimen/common_16_dp"
+            android:layout_marginRight="@dimen/common_16_dp"
+            android:text="@string/next_reminder_time"
+            android:textColor="@color/white"
+            android:textSize="@dimen/h16" />
+
+        <com.example.custom.CustomTextViewBlack
+            android:id="@+id/prayerTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dummyTv"
+            android:layout_marginLeft="@dimen/common_16_dp"
+            android:layout_marginRight="@dimen/common_16_dp"
+            android:background="@drawable/rounder_corner_white"
+            android:gravity="top"
+            android:padding="@dimen/common_16_dp"
+            android:singleLine="true"
+            android:text="@string/des_prayer"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/h16" />
+
+        <com.example.custom.CustomTextViewBlack
+            android:id="@+id/dummyTv2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/prayerTime"
+            android:layout_marginLeft="@dimen/common_16_dp"
+            android:layout_marginTop="@dimen/common_16_dp"
+            android:layout_marginRight="@dimen/common_16_dp"
+            android:text="@string/repeating"
+            android:textColor="@color/white"
+            android:textSize="@dimen/h16" />
+
+        <com.example.custom.CustomTextViewBlack
+            android:id="@+id/repartingText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dummyTv2"
+            android:layout_marginLeft="@dimen/common_16_dp"
+            android:layout_marginRight="@dimen/common_16_dp"
+            android:background="@drawable/rounder_corner_white"
+            android:gravity="top"
+            android:padding="@dimen/common_16_dp"
+            android:singleLine="true"
+            android:text="Never"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/h16" />
+
+        <com.example.custom.CustomTextViewBlack
+
+            android:id="@+id/choosePray"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/actionBar"
+            android:layout_marginLeft="@dimen/common_16_dp"
+            android:layout_marginTop="@dimen/common_16_dp"
+            android:text="@string/choose_pray"
+            android:textColor="@color/white"
+            android:textSize="@dimen/h16" />
+
+        <com.example.custom.CustomTextViewBlack
+            android:id="@+id/prayerForReminder"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_50_dp"
+            android:layout_below="@+id/choosePray"
+            android:layout_marginLeft="@dimen/common_16_dp"
+            android:layout_marginRight="@dimen/common_16_dp"
+            android:background="@drawable/rounder_corner_white"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/common_16_dp"
+            android:paddingRight="@dimen/common_16_dp"
+            android:singleLine="true"
+            android:text="ANY PRAYER(at random)"
+            android:textColor="@color/colorAccent"
+            android:textColorHint="@color/colorAccent"
+            android:textSize="@dimen/h16" />
+
+        <RelativeLayout
+            android:id="@+id/loaderLayoutPrayer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:clickable="true"
+            android:background="@drawable/transparent_button"
+            android:visibility="gone">
+
+            <ProgressBar
+                android:layout_width="@dimen/common_50_dp"
+                android:layout_height="@dimen/common_50_dp"
+                android:indeterminate="true"
+                android:indeterminateTintMode="src_atop"
+                android:layout_centerInParent="true" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <data></data>
+
+
+</layout>

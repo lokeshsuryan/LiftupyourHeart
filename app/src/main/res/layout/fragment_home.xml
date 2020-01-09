@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <ImageView
+                android:id="@+id/dropLet"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_120_dp"
+                android:background="@drawable/droplet"/>
+            <ImageView
+                android:id="@+id/logoImg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/common_15_dp"
+                app:srcCompat="@mipmap/ic_launcher"/>
+
+            <com.example.custom.CustomTextViewBlack
+                android:layout_marginTop="@dimen/common_20_dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="3dp"
+                android:layout_toRightOf="@+id/logoImg"
+                android:text="@string/Bringing_you_closer_"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/homeListRV"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/dropLet"
+                android:layout_marginLeft="@dimen/common_30_dp"
+                android:layout_marginRight="@dimen/common_20_dp"
+                android:layout_above="@+id/bottamRll"
+                android:layout_centerHorizontal="true"
+                android:layout_height="match_parent"></androidx.recyclerview.widget.RecyclerView>
+            <RelativeLayout
+                android:id="@+id/bottamRll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/common_16_dp"
+                android:paddingRight="@dimen/common_16_dp"
+                android:layout_marginBottom="@dimen/common_8_dp"
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/homeIB"
+                    android:layout_width="@dimen/common_40_dp"
+                    android:layout_height="@dimen/common_40_dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/home" />
+
+                <ImageButton
+                    android:id="@+id/logout"
+                    android:layout_width="@dimen/common_40_dp"
+                    android:layout_height="@dimen/common_40_dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/logout" />
+            </RelativeLayout>
+        </RelativeLayout>
+</layout>

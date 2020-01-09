@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data></data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/screenbg_signup"
+        android:orientation="vertical">
+        <com.example.custom.CustomTextViewBlack
+            android:id="@+id/individualTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/toolbar"
+            android:layout_marginTop="@dimen/common_16_dp"
+            android:layout_marginLeft="@dimen/common_16_dp"
+            android:text="@string/indu_prayers"
+            android:textColor="@color/black"
+            android:textSize="@dimen/h16" />
+
+        <RelativeLayout
+            android:id="@+id/anyPrayer"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_50_dp"
+            android:layout_below="@+id/individualTv"
+            android:layout_marginLeft="@dimen/common_16_dp"
+            android:layout_marginRight="@dimen/common_16_dp"
+            android:background="@drawable/rounder_corner_white"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/selectRandomIV"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                android:background="@color/black">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    app:srcCompat="@drawable/ic_check"
+                    android:layout_marginRight="@dimen/common_16_dp"
+                    android:layout_centerVertical="true" />
+            </RelativeLayout>
+
+            <com.example.custom.CustomTextViewBlack
+                android:id="@+id/prayerForReminder"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/common_5_dp"
+                android:paddingRight="@dimen/common_5_dp"
+                android:singleLine="true"
+                android:text="ANY PRAYER(at random)"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/h14"
+                android:textColorHint="@color/colorAccent" />
+
+        </RelativeLayout>
+
+        <com.example.custom.CustomTextViewBlack
+            android:id="@+id/choosePray"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/anyPrayer"
+            android:layout_marginLeft="@dimen/common_16_dp"
+            android:layout_marginTop="@dimen/common_16_dp"
+            android:text="@string/indu_prayers"
+            android:textColor="@color/black"
+            android:textSize="@dimen/h16" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/allPrayer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/newGroup"
+            android:layout_below="@+id/choosePray"
+            android:layout_marginLeft="@dimen/common_16_dp"
+            android:layout_marginRight="@dimen/common_16_dp"
+            android:layout_weight="4">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <RelativeLayout
+            android:id="@+id/loaderLayoutPrayer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:visibility="gone">
+
+            <ProgressBar
+                android:layout_width="@dimen/common_50_dp"
+                android:layout_height="@dimen/common_50_dp"
+                android:layout_centerInParent="true" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+</layout>

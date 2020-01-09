@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.fragment.SettingFragment">
+
+    <data></data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gray"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimaryDark"
+            app:title="@string/settings"
+            app:titleTextColor="@color/white">
+        </androidx.appcompat.widget.Toolbar>
+
+        <com.example.custom.CustomTextViewBlack
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/common_16_dp"
+            android:layout_marginTop="@dimen/common_20_dp"
+            android:text="@string/legal"
+            android:textAllCaps="true"
+            android:textColor="@color/black" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_1_dp"
+            android:background="@color/gray"></View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/common_16_dp"
+            android:paddingRight="@dimen/common_16_dp">
+            <com.example.custom.CustomTextViewBlack
+                android:id="@+id/psTV"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_50_dp"
+                android:gravity="center_vertical"
+                android:drawableRight="@drawable/right_arrow_home"
+                android:text="@string/term_service"
+                android:textColor="@color/black" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_1_dp"
+                android:background="@color/gray"></View>
+            <com.example.custom.CustomTextViewBlack
+                android:id="@+id/ppTV"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_50_dp"
+                android:gravity="center_vertical"
+                android:drawableRight="@drawable/right_arrow_home"
+                android:text="@string/pp"
+                android:textColor="@color/black" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_1_dp"
+                android:background="@color/gray"></View>
+            <com.example.custom.CustomTextViewBlack
+                android:id="@+id/licenceTV"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_50_dp"
+                android:gravity="center_vertical"
+                android:drawableRight="@drawable/right_arrow_home"
+                android:text="@string/licences"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_1_dp"
+            android:background="@color/gray"></View>
+
+    </LinearLayout>
+</layout>
+

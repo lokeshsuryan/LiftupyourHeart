@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    app:cardCornerRadius="@dimen/common_10_dp"
+    app:cardElevation="@dimen/common_10_dp"
+    android:elevation="@dimen/common_10_dp"
+    app:cardBackgroundColor="@color/trans"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/parentLL"
+        android:layout_width="match_parent"
+        android:layout_height="?listPreferredItemHeight"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/common_5_dp"
+        android:background="@drawable/rounder_corner_white"
+        android:paddingLeft="@dimen/common_16_dp">
+    <com.example.custom.CustomTextViewBlack
+        android:id="@+id/txtGroupName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:text=""
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:singleLine="true"
+        android:layout_toLeftOf="@+id/handle"
+        android:textColor="@color/black" />
+
+    <ImageView
+        android:id="@+id/handle"
+        android:layout_width="?listPreferredItemHeight"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:scaleType="center"
+        android:visibility="gone"
+        app:srcCompat="@drawable/ic_reorder_grey_500_24dp" />
+</RelativeLayout>
+</androidx.cardview.widget.CardView>

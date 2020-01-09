@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="20dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardPreventCornerOverlap="false"
+        app:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/common_10_dp"
+            android:orientation="vertical">
+
+
+
+            <com.example.custom.CustomTextViewBold
+                android:id="@+id/basic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/parish_plan"
+                android:textColor="@color/black" />
+
+            <com.example.custom.CustomTextViewBold
+                android:id="@+id/free"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/common_10_dp"
+                android:text="@string/free"
+                android:layout_below="@+id/basic"
+                android:textColor="@color/black"
+                 />
+
+            <com.example.custom.CustomTextViewBold
+                android:id="@+id/first_ten"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/common_10_dp"
+                android:text="@string/free_10_days_free"
+                android:layout_below="@+id/free"
+                android:textColor="@color/black"
+                 />
+
+            <com.example.custom.CustomTextViewBold
+                android:id="@+id/per_month"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/common_10_dp"
+                android:text="@string/per_month"
+                android:layout_below="@+id/first_ten"
+                android:textColor="@color/black"
+                 />
+
+            <com.example.custom.CustomTextViewBold
+                android:id="@+id/per_year"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/common_10_dp"
+                android:text="@string/per_year_paris"
+                android:layout_below="@+id/per_month"
+                android:textColor="@color/black"
+               />
+            <com.example.custom.CustomTextViewBold
+                android:id="@+id/add_members"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/common_10_dp"
+                android:text="@string/two_month_free"
+                android:layout_below="@+id/per_year"
+                android:textColor="@color/black"
+                />
+
+            <com.example.custom.CustomTextViewBold
+                android:id="@+id/donation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/common_10_dp"
+                android:text="@string/unlimited"
+                android:layout_below="@+id/add_members"
+                android:textColor="@color/black" />
+
+            <com.example.custom.ButtonMediumText
+                android:id="@+id/monthPlan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/common_20_dp"
+                android:background="@color/red"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/common_10_dp"
+                android:layout_marginRight="@dimen/common_10_dp"
+                android:layout_marginBottom="@dimen/common_10_dp"
+                android:paddingLeft="@dimen/common_10_dp"
+                android:paddingRight="@dimen/common_10_dp"
+                android:text="@string/month_plan"
+                android:textColor="@color/white" />
+            <com.example.custom.ButtonMediumText
+                android:id="@+id/getStarted"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginRight="@dimen/common_10_dp"
+                android:layout_marginBottom="@dimen/common_10_dp"
+                android:background="@color/red"
+                android:layout_toRightOf="@+id/monthPlan"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:paddingLeft="@dimen/common_10_dp"
+                android:paddingRight="@dimen/common_10_dp"
+                android:text="@string/year_plan"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</FrameLayout>
