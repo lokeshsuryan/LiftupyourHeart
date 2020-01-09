@@ -44,6 +44,7 @@ import com.google.gson.Gson;
 import java.util.regex.Pattern;
 
 public class SignUpGuideLineActivity extends AppCompatActivity implements ViewPager.OnPageChangeListener, Animation.AnimationListener, SignUpListner, View.OnClickListener {
+
     int dotsCount;
     ImageView[] dots;
     private SignUpGuideLineBinding bind;
