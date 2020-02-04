@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="com.example.fragment.AddPrayerFragment">
-
+    tools:context="com.liftupmyheart.fragment.AddPrayerFragment"><data></data>
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -15,7 +14,7 @@
             android:layout_height="?attr/actionBarSize"
             android:layout_marginTop="@dimen/common_10_dp">
 
-            <com.example.custom.ButtonTextBlack
+            <com.liftupmyheart.custom.ButtonTextBlack
                 android:id="@+id/cancelBtn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -25,7 +24,7 @@
                 android:text="@string/cancel_"
                 android:textColor="@color/white" />
 
-            <com.example.custom.ButtonTextBlack
+            <com.liftupmyheart.custom.ButtonTextBlack
                 android:id="@+id/doneBtn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -41,7 +40,7 @@
 
 
 
-        <com.example.custom.ButtonMediumText
+        <com.liftupmyheart.custom.ButtonMediumText
             android:id="@+id/removeReminder"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -55,7 +54,7 @@
             android:textStyle="bold"
             android:visibility="gone" />
 
-        <com.example.custom.CustomTextViewBlack
+        <com.liftupmyheart.custom.CustomTextViewBlack
             android:id="@+id/dummyTv"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -67,7 +66,7 @@
             android:textColor="@color/white"
             android:textSize="@dimen/h16" />
 
-        <com.example.custom.CustomTextViewBlack
+        <com.liftupmyheart.custom.CustomTextViewBlack
             android:id="@+id/prayerTime"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -82,7 +81,7 @@
             android:textColor="@color/colorAccent"
             android:textSize="@dimen/h16" />
 
-        <com.example.custom.CustomTextViewBlack
+        <com.liftupmyheart.custom.CustomTextViewBlack
             android:id="@+id/dummyTv2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -94,7 +93,7 @@
             android:textColor="@color/white"
             android:textSize="@dimen/h16" />
 
-        <com.example.custom.CustomTextViewBlack
+        <com.liftupmyheart.custom.CustomTextViewBlack
             android:id="@+id/repartingText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -109,7 +108,7 @@
             android:textColor="@color/colorAccent"
             android:textSize="@dimen/h16" />
 
-        <com.example.custom.CustomTextViewBlack
+        <com.liftupmyheart.custom.CustomTextViewBlack
 
             android:id="@+id/choosePray"
             android:layout_width="match_parent"
@@ -121,7 +120,7 @@
             android:textColor="@color/white"
             android:textSize="@dimen/h16" />
 
-        <com.example.custom.CustomTextViewBlack
+        <com.liftupmyheart.custom.CustomTextViewBlack
             android:id="@+id/prayerForReminder"
             android:layout_width="match_parent"
             android:layout_height="@dimen/common_50_dp"
@@ -156,8 +155,4 @@
 
         </RelativeLayout>
     </RelativeLayout>
-
-    <data></data>
-
-
 </layout>

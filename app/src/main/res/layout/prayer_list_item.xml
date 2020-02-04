@@ -18,7 +18,7 @@
         android:layout_marginTop="@dimen/common_5_dp"
         android:background="@drawable/rounder_corner_white"
         android:paddingLeft="@dimen/common_16_dp">
-    <com.example.custom.CustomTextViewBlack
+    <com.liftupmyheart.custom.CustomTextViewBlack
         android:id="@+id/txtGroupName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

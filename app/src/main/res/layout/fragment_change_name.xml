@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="com.example.fragment.SettingFragment">
+    tools:context="com.liftupmyheart.fragment.SettingFragment">
 
-    <data></data>
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -11,7 +10,7 @@
         android:background="@color/light_gray"
         android:orientation="vertical">
 
-        <com.example.custom.CustomTextViewBlack
+        <com.liftupmyheart.custom.CustomTextViewBlack
             android:id="@+id/dummyName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -40,7 +39,7 @@
             android:paddingLeft="@dimen/common_16_dp"
             android:paddingRight="@dimen/common_16_dp">
 
-            <com.example.custom.CustomEditTextBlack
+            <com.liftupmyheart.custom.CustomEditTextBlack
                 android:id="@+id/firstNameET"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/common_50_dp"
@@ -59,7 +58,7 @@
             android:layout_below="@+id/firstNameRl"
             android:background="@color/gray"></View>
 
-        <com.example.custom.CustomTextViewBlack
+        <com.liftupmyheart.custom.CustomTextViewBlack
             android:id="@+id/dummyLastName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -88,7 +87,7 @@
             android:paddingLeft="@dimen/common_16_dp"
             android:paddingRight="@dimen/common_16_dp">
 
-            <com.example.custom.CustomEditTextBlack
+            <com.liftupmyheart.custom.CustomEditTextBlack
                 android:id="@+id/lastNameET"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/common_50_dp"

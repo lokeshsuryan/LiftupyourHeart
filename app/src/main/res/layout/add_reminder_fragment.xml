@@ -4,14 +4,14 @@
     android:layout_height="wrap_content"
     android:orientation="horizontal">
 
-    <com.example.custom.CustomTextViewBlack
+    <com.liftupmyheart.custom.CustomTextViewBlack
         android:id="@+id/item_number"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/h16"
          />
 
-    <com.example.custom.CustomTextViewBlack
+    <com.liftupmyheart.custom.CustomTextViewBlack
         android:id="@+id/content"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

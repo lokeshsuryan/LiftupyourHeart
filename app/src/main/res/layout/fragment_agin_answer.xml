@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="com.example.fragment.AddPrayerFragment">
-
-    <data></data>
-
+    tools:context="com.liftupmyheart.fragment.AddPrayerFragment">
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -28,7 +25,7 @@
                     android:layout_gravity="center_horizontal"
                     android:background="@drawable/answred_prayer" />
 
-                <com.example.custom.CustomTextViewBlack
+                <com.liftupmyheart.custom.CustomTextViewBlack
                     android:id="@+id/dummyprayerTv"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -37,7 +34,7 @@
                     android:textColor="@color/black"
                     android:textSize="@dimen/h20" />
 
-                <com.example.custom.CustomTextViewBlack
+                <com.liftupmyheart.custom.CustomTextViewBlack
                     android:id="@+id/title"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/common_50_dp"
@@ -51,7 +48,7 @@
                     android:textColor="@color/black"
                     android:textColorHint="@color/gray_light" />
 
-                <com.example.custom.CustomTextViewBlack
+                <com.liftupmyheart.custom.CustomTextViewBlack
                     android:id="@+id/dummyTv"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -60,7 +57,7 @@
                     android:textColor="@color/black"
                     android:textSize="@dimen/h20" />
 
-                <com.example.custom.CustomTextViewBlack
+                <com.liftupmyheart.custom.CustomTextViewBlack
                     android:id="@+id/description"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -88,7 +85,7 @@
             android:orientation="horizontal"
             android:visibility="visible">
 
-            <com.example.custom.ButtonTextBlack
+            <com.liftupmyheart.custom.ButtonTextBlack
                 android:id="@+id/answerPrayer"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -99,7 +96,7 @@
                 android:textColor="@color/white"
                 android:textAllCaps="false" />
 
-            <com.example.custom.ButtonTextBlack
+            <com.liftupmyheart.custom.ButtonTextBlack
                 android:id="@+id/deletePrayer"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"

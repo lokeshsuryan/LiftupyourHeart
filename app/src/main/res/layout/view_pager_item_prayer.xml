@@ -11,7 +11,7 @@
             android:layout_marginTop="@dimen/common_120_dp"
             android:orientation="vertical">
 
-            <com.example.custom.CustomTextViewBlack
+            <com.liftupmyheart.custom.CustomTextViewBlack
                 android:id="@+id/prayerTitle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -20,7 +20,7 @@
                 android:textColor="@color/white"
                 android:textSize="24sp" />
 
-            <com.example.custom.CustomTextViewBlack
+            <com.liftupmyheart.custom.CustomTextViewBlack
                 android:id="@+id/prayerDesc"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

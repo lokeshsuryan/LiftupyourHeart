@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="com.example.fragment.SettingFragment">
+    tools:context="com.liftupmyheart.fragment.SettingFragment">
 
     <data></data>
 
@@ -12,7 +12,7 @@
         android:orientation="vertical">
 
 
-        <com.example.custom.CustomTextViewBlack
+        <com.liftupmyheart.custom.CustomTextViewBlack
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/common_16_dp"
@@ -39,7 +39,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
-                <com.example.custom.CustomTextViewBlack
+                <com.liftupmyheart.custom.CustomTextViewBlack
                     android:layout_width="@dimen/common_0_dp"
                     android:layout_height="@dimen/common_50_dp"
                     android:layout_marginLeft="@dimen/common_16_dp"
@@ -50,7 +50,7 @@
                     android:singleLine="true"
                     android:textColor="@color/black" />
 
-                <com.example.custom.CustomTextViewBlack
+                <com.liftupmyheart.custom.CustomTextViewBlack
                     android:id="@+id/timeFinishNotiTV"
                     android:layout_width="@dimen/common_0_dp"
                     android:layout_height="@dimen/common_50_dp"
@@ -74,7 +74,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
-                <com.example.custom.CustomTextViewBlack
+                <com.liftupmyheart.custom.CustomTextViewBlack
                     android:layout_width="@dimen/common_0_dp"
                     android:layout_height="@dimen/common_50_dp"
                     android:layout_marginLeft="@dimen/common_16_dp"
@@ -102,7 +102,7 @@
                         android:layout_toLeftOf="@+id/prayerTime"
                         android:background="@drawable/toggle_selector" />
 
-                    <com.example.custom.CustomTextViewBlack
+                    <com.liftupmyheart.custom.CustomTextViewBlack
                         android:id="@+id/prayerTime"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -125,7 +125,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
-                <com.example.custom.CustomTextViewBlack
+                <com.liftupmyheart.custom.CustomTextViewBlack
                     android:layout_width="@dimen/common_0_dp"
                     android:layout_height="@dimen/common_50_dp"
                     android:layout_marginLeft="@dimen/common_16_dp"
@@ -136,7 +136,7 @@
                     android:singleLine="true"
                     android:textColor="@color/black" />
 
-                <com.example.custom.CustomTextViewBlack
+                <com.liftupmyheart.custom.CustomTextViewBlack
                     android:id="@+id/howLongTV"
                     android:layout_width="@dimen/common_0_dp"
                     android:layout_height="@dimen/common_50_dp"
@@ -158,7 +158,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
-                <com.example.custom.CustomTextViewBlack
+                <com.liftupmyheart.custom.CustomTextViewBlack
                     android:layout_width="@dimen/common_0_dp"
                     android:layout_height="@dimen/common_50_dp"
                     android:layout_marginLeft="@dimen/common_16_dp"
@@ -169,7 +169,7 @@
                     android:singleLine="true"
                     android:textColor="@color/black" />
 
-                <com.example.custom.CustomTextViewBlack
+                <com.liftupmyheart.custom.CustomTextViewBlack
                     android:id="@+id/nextPrayerNotiTV"
                     android:layout_width="@dimen/common_0_dp"
                     android:layout_height="@dimen/common_50_dp"

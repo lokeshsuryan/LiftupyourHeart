@@ -19,7 +19,7 @@
             android:paddingLeft="@dimen/common_16_dp"
             android:paddingRight="@dimen/common_16_dp">
 
-            <com.example.custom.CustomTextViewBlack
+            <com.liftupmyheart.custom.CustomTextViewBlack
                 android:id="@+id/prayerItem"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/common_50_dp"
@@ -42,10 +42,10 @@
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/listRingTime"
-            android:name="com.example.fragment.NextPrayerListFragment"
+            android:name="com.liftupmyheart.fragment.NextPrayerListFragment"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            tools:context="com.example.fragment.NextPrayerListFragment"
+            tools:context="com.liftupmyheart.fragment.NextPrayerListFragment"
             tools:listitem="@layout/fragment_item" />
     </LinearLayout>
 </layout>

@@ -9,7 +9,7 @@
     android:paddingRight="@dimen/common_16_dp"
     android:id="@+id/parentLL">
 
-    <com.example.custom.CustomTextViewBlack
+    <com.liftupmyheart.custom.CustomTextViewBlack
         android:id="@+id/prayerItem"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android">
-
+<data></data>
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -47,7 +47,7 @@
 
         </androidx.recyclerview.widget.RecyclerView>
 
-        <com.example.custom.ButtonMediumText
+        <com.liftupmyheart.custom.ButtonMediumText
             android:id="@+id/newReminderOrPrayer"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -63,7 +63,7 @@
             android:textSize="@dimen/h20"
             android:textStyle="bold" />
 
-        <com.example.custom.CustomTextViewBlack
+        <com.liftupmyheart.custom.CustomTextViewBlack
             android:id="@+id/allReminderDummy"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -87,6 +87,4 @@
 
         </RelativeLayout>
     </RelativeLayout>
-
-    <data></data>
 </layout>

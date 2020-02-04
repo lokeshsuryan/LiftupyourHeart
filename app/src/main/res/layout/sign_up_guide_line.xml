@@ -3,8 +3,6 @@
     xmlns:card_view="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <data></data>
-
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -47,7 +45,7 @@
         android:orientation="vertical"
         android:visibility="invisible">
 
-        <com.example.custom.ButtonViewBold
+        <com.liftupmyheart.custom.ButtonViewBold
             android:id="@+id/closeView"
             android:layout_width="@dimen/common_30_dp"
             android:layout_height="@dimen/common_30_dp"
@@ -78,7 +76,7 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
 
-                    <com.example.custom.CustomEditTextBold
+                    <com.liftupmyheart.custom.CustomEditTextBold
                         android:id="@+id/firstName"
                         android:layout_width="@dimen/common_0_dp"
                         android:layout_height="@dimen/common_40_dp"
@@ -94,7 +92,7 @@
                         android:layout_height="@dimen/common_60_dp"
                         android:background="@color/gray"></View>
 
-                    <com.example.custom.CustomEditTextBold
+                    <com.liftupmyheart.custom.CustomEditTextBold
                         android:id="@+id/lastname"
                         android:layout_width="@dimen/common_0_dp"
                         android:layout_height="@dimen/common_40_dp"
@@ -112,7 +110,7 @@
                     android:layout_height="@dimen/common_1_dp"
                     android:background="@color/gray"></View>
 
-                <com.example.custom.CustomEditTextBold
+                <com.liftupmyheart.custom.CustomEditTextBold
                     android:id="@+id/emailId"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/common_60_dp"
@@ -126,7 +124,7 @@
                     android:layout_height="@dimen/common_1_dp"
                     android:background="@color/gray"></View>
 
-                <com.example.custom.CustomEditTextBold
+                <com.liftupmyheart.custom.CustomEditTextBold
                     android:id="@+id/passWord"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/common_60_dp"
@@ -141,7 +139,7 @@
                     android:layout_height="@dimen/common_1_dp"
                     android:background="@color/gray"></View>
 
-                <com.example.custom.CustomEditTextBold
+                <com.liftupmyheart.custom.CustomEditTextBold
                     android:id="@+id/phoneNo"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/common_60_dp"
@@ -174,7 +172,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
-                <com.example.custom.CustomEditTextBold
+                <com.liftupmyheart.custom.CustomEditTextBold
                     android:id="@+id/emailIdLogin"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/common_40_dp"
@@ -189,7 +187,7 @@
                     android:layout_height="@dimen/common_1_dp"
                     android:background="@color/gray"></View>
 
-                <com.example.custom.CustomEditTextBold
+                <com.liftupmyheart.custom.CustomEditTextBold
                     android:id="@+id/passWordLogin"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/common_40_dp"
@@ -202,7 +200,7 @@
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
-        <com.example.custom.ButtonMediumText
+        <com.liftupmyheart.custom.ButtonMediumText
             android:id="@+id/signUp"
             android:layout_width="@dimen/common_170_dp"
             android:layout_height="wrap_content"
@@ -213,7 +211,7 @@
             android:textColor="@color/white"
             android:textStyle="bold" />
 
-        <com.example.custom.CustomTextViewBlack
+        <com.liftupmyheart.custom.CustomTextViewBlack
             android:id="@+id/termCondition"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="com.example.fragment.SettingFragment">
+    tools:context="com.liftupmyheart.fragment.SettingFragment">
 
     <data></data>
 
@@ -15,7 +15,7 @@
             android:background="@color/light_gray"
             android:orientation="vertical">
 
-            <com.example.custom.CustomTextViewBlack
+            <com.liftupmyheart.custom.CustomTextViewBlack
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/common_16_dp"
@@ -41,7 +41,7 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
 
-                    <com.example.custom.CustomTextViewBlack
+                    <com.liftupmyheart.custom.CustomTextViewBlack
                         android:layout_width="@dimen/common_0_dp"
                         android:layout_height="@dimen/common_50_dp"
                         android:layout_marginLeft="@dimen/common_16_dp"
@@ -50,7 +50,7 @@
                         android:text="@string/show_desc"
                         android:textColor="@color/black" />
 
-                    <com.example.custom.CustomTextViewBlack
+                    <com.liftupmyheart.custom.CustomTextViewBlack
                         android:id="@+id/showDesc"
                         android:layout_width="@dimen/common_0_dp"
                         android:layout_height="@dimen/common_50_dp"
@@ -74,7 +74,7 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
 
-                    <com.example.custom.CustomTextViewBlack
+                    <com.liftupmyheart.custom.CustomTextViewBlack
                         android:layout_width="@dimen/common_0_dp"
                         android:layout_height="@dimen/common_50_dp"
                         android:layout_marginLeft="@dimen/common_16_dp"
@@ -83,7 +83,7 @@
                         android:text="@string/prayer_time"
                         android:textColor="@color/black" />
 
-                    <com.example.custom.CustomTextViewBlack
+                    <com.liftupmyheart.custom.CustomTextViewBlack
                         android:id="@+id/prayerTime"
                         android:layout_width="@dimen/common_0_dp"
                         android:layout_height="@dimen/common_50_dp"
@@ -103,7 +103,7 @@
                 android:layout_height="@dimen/common_1_dp"
                 android:background="@color/gray"></View>
 
-            <com.example.custom.CustomTextViewBlack
+            <com.liftupmyheart.custom.CustomTextViewBlack
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/common_16_dp"
@@ -131,7 +131,7 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
 
-                    <com.example.custom.CustomTextViewBlack
+                    <com.liftupmyheart.custom.CustomTextViewBlack
                         android:layout_width="@dimen/common_0_dp"
                         android:layout_height="@dimen/common_50_dp"
                         android:layout_marginLeft="@dimen/common_16_dp"
@@ -140,7 +140,7 @@
                         android:text="@string/set_order"
                         android:textColor="@color/black" />
 
-                    <com.example.custom.CustomTextViewBlack
+                    <com.liftupmyheart.custom.CustomTextViewBlack
                         android:id="@+id/setOrder"
                         android:layout_width="@dimen/common_0_dp"
                         android:layout_height="@dimen/common_50_dp"
@@ -159,7 +159,7 @@
                 android:layout_height="@dimen/common_1_dp"
                 android:background="@color/gray"></View>
 
-            <com.example.custom.CustomTextViewBlack
+            <com.liftupmyheart.custom.CustomTextViewBlack
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/common_16_dp"
@@ -187,7 +187,7 @@
                     android:background="@color/white"
                     android:orientation="horizontal">
 
-                    <com.example.custom.CustomTextViewBlack
+                    <com.liftupmyheart.custom.CustomTextViewBlack
                         android:layout_width="@dimen/common_0_dp"
                         android:layout_height="@dimen/common_50_dp"
                         android:layout_marginLeft="@dimen/common_16_dp"
@@ -196,7 +196,7 @@
                         android:text="@string/reminder_type"
                         android:textColor="@color/black" />
 
-                    <com.example.custom.CustomTextViewBlack
+                    <com.liftupmyheart.custom.CustomTextViewBlack
                         android:id="@+id/reminderType"
                         android:layout_width="@dimen/common_0_dp"
                         android:layout_height="@dimen/common_50_dp"
@@ -221,7 +221,7 @@
                 android:layout_height="@dimen/common_1_dp"
                 android:background="@color/gray"></View>
 
-            <com.example.custom.CustomTextViewBlack
+            <com.liftupmyheart.custom.CustomTextViewBlack
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/common_16_dp"
@@ -243,7 +243,7 @@
                 android:background="@color/white"
                 android:orientation="vertical">
 
-                <com.example.custom.CustomTextViewBlack
+                <com.liftupmyheart.custom.CustomTextViewBlack
                     android:id="@+id/changeName"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/common_50_dp"
@@ -260,7 +260,7 @@
                     android:layout_height="@dimen/common_1_dp"
                     android:background="@color/gray"></View>
 
-                <com.example.custom.CustomTextViewBlack
+                <com.liftupmyheart.custom.CustomTextViewBlack
                     android:id="@+id/changePassword"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/common_50_dp"
@@ -276,7 +276,7 @@
                     android:layout_height="@dimen/common_1_dp"
                     android:background="@color/gray"></View>
 
-                <com.example.custom.CustomTextViewBlack
+                <com.liftupmyheart.custom.CustomTextViewBlack
                     android:id="@+id/legal"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/common_40_dp"
@@ -292,7 +292,7 @@
                     android:layout_height="@dimen/common_1_dp"
                     android:background="@color/gray"></View>
 
-                <com.example.custom.ButtonTextBlack
+                <com.liftupmyheart.custom.ButtonTextBlack
                     android:id="@+id/logout"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/common_50_dp"
@@ -304,7 +304,7 @@
                     android:textColor="@color/colorPrimary" />
             </LinearLayout>
 
-            <com.example.custom.CustomTextViewBlack
+            <com.liftupmyheart.custom.CustomTextViewBlack
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/common_16_dp"
@@ -342,7 +342,7 @@
                     android:background="@drawable/mail" />
             </RelativeLayout>
 
-            <com.example.custom.CustomTextViewBlack
+            <com.liftupmyheart.custom.CustomTextViewBlack
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/common_16_dp"

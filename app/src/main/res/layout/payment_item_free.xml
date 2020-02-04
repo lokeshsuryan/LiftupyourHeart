@@ -22,14 +22,14 @@
 
 
 
-            <com.example.custom.CustomTextViewBold
+            <com.liftupmyheart.custom.CustomTextViewBold
                 android:id="@+id/basic"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/basic"
                 android:textColor="@color/black" />
 
-            <com.example.custom.CustomTextViewBold
+            <com.liftupmyheart.custom.CustomTextViewBold
                 android:id="@+id/free"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -39,7 +39,7 @@
                 android:textColor="@color/black"
                 android:textSize="35sp" />
 
-            <com.example.custom.CustomTextViewBold
+            <com.liftupmyheart.custom.CustomTextViewBold
                 android:id="@+id/firstFree"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -49,7 +49,7 @@
                 android:drawablePadding="@dimen/common_10_dp"
                 android:text="@string/first_free"
                 android:textColor="@color/black" />
-            <com.example.custom.ButtonMediumText
+            <com.liftupmyheart.custom.ButtonMediumText
                 android:id="@+id/monthPlan"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -65,7 +65,7 @@
                 android:text="@string/month_plan"
                 android:visibility="gone"
                 android:textColor="@color/red" />
-            <com.example.custom.ButtonMediumText
+            <com.liftupmyheart.custom.ButtonMediumText
                 android:id="@+id/getStarted"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

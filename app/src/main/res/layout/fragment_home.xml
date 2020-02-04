@@ -2,7 +2,7 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     >
-
+    <data></data>
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -21,7 +21,7 @@
                 android:paddingTop="@dimen/common_15_dp"
                 app:srcCompat="@mipmap/ic_launcher"/>
 
-            <com.example.custom.CustomTextViewBlack
+            <com.liftupmyheart.custom.CustomTextViewBlack
                 android:layout_marginTop="@dimen/common_20_dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

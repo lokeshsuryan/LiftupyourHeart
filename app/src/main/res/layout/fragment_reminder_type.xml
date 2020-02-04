@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="com.example.fragment.SettingFragment">
+    tools:context="com.liftupmyheart.fragment.SettingFragment">
 
     <data></data>
 
@@ -31,7 +31,7 @@
                 android:gravity="center_vertical"
                 android:orientation="horizontal">
 
-                <com.example.custom.CustomTextViewBlack
+                <com.liftupmyheart.custom.CustomTextViewBlack
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/common_50_dp"
                     android:gravity="center_vertical"
@@ -59,7 +59,7 @@
                 android:gravity="center_vertical"
                 android:orientation="horizontal">
 
-                <com.example.custom.CustomTextViewBlack
+                <com.liftupmyheart.custom.CustomTextViewBlack
                     android:id="@+id/email"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/common_50_dp"
@@ -86,7 +86,7 @@
                 android:gravity="center_vertical"
                 android:orientation="horizontal">
 
-                <com.example.custom.CustomTextViewBlack
+                <com.liftupmyheart.custom.CustomTextViewBlack
                     android:id="@+id/oldest"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/common_50_dp"
@@ -111,7 +111,7 @@
             android:layout_width="match_parent"
             android:layout_height="@dimen/common_1_dp"
             android:background="@color/gray"></View>
-        <com.example.custom.CustomTextViewBlack
+        <com.liftupmyheart.custom.CustomTextViewBlack
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/common_16_dp"
@@ -133,7 +133,7 @@
             android:paddingRight="@dimen/common_16_dp"
             android:orientation="horizontal">
 
-            <com.example.custom.CustomTextViewBlack
+            <com.liftupmyheart.custom.CustomTextViewBlack
 
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/common_50_dp"
@@ -158,7 +158,7 @@
             android:layout_height="@dimen/common_1_dp"
             android:background="@color/gray"></View>
 
-        <com.example.custom.CustomTextViewBlack
+        <com.liftupmyheart.custom.CustomTextViewBlack
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_vertical|center_horizontal"

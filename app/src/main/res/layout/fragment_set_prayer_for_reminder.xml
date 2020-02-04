@@ -9,7 +9,7 @@
         android:layout_height="match_parent"
         android:background="@drawable/screenbg_signup"
         android:orientation="vertical">
-        <com.example.custom.CustomTextViewBlack
+        <com.liftupmyheart.custom.CustomTextViewBlack
             android:id="@+id/individualTv"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -46,7 +46,7 @@
                     android:layout_centerVertical="true" />
             </RelativeLayout>
 
-            <com.example.custom.CustomTextViewBlack
+            <com.liftupmyheart.custom.CustomTextViewBlack
                 android:id="@+id/prayerForReminder"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -61,7 +61,7 @@
 
         </RelativeLayout>
 
-        <com.example.custom.CustomTextViewBlack
+        <com.liftupmyheart.custom.CustomTextViewBlack
             android:id="@+id/choosePray"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

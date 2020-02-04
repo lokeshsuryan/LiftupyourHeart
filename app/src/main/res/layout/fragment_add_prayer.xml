@@ -2,9 +2,7 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="com.example.fragment.AddPrayerFragment">
-
-    <data></data>
+    tools:context="com.liftupmyheart.fragment.AddPrayerFragment">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -20,7 +18,7 @@
             app:title="@string/cancel_"
             app:titleTextColor="@color/white">
 
-            <com.example.custom.CustomTextViewBlack
+            <com.liftupmyheart.custom.CustomTextViewBlack
                 android:id="@+id/toolbarTitle"
                 style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
                 android:layout_width="wrap_content"
@@ -30,7 +28,7 @@
         </androidx.appcompat.widget.Toolbar>
 
 
-        <com.example.custom.CustomEditTextBlack
+        <com.liftupmyheart.custom.CustomEditTextBlack
             android:id="@+id/title"
             android:layout_width="match_parent"
             android:layout_height="@dimen/common_50_dp"
@@ -45,7 +43,7 @@
             android:textColor="@color/black"
             android:textColorHint="@color/gray_light" />
 
-        <com.example.custom.CustomTextViewBlack
+        <com.liftupmyheart.custom.CustomTextViewBlack
             android:id="@+id/dummyTv"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -55,7 +53,7 @@
             android:textColor="@color/black"
             android:textSize="@dimen/h20" />
 
-        <com.example.custom.CustomEditTextBlack
+        <com.liftupmyheart.custom.CustomEditTextBlack
             android:id="@+id/description"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
