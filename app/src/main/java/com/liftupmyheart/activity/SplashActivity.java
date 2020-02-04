@@ -33,7 +33,6 @@ import com.liftupmyheart.viewModel.SignUpViewModel;
 import static com.liftupmyheart.fragment.AddReminderFragment.ALARM_REQUEST_CODE;
 
 public class SplashActivity extends AppCompatActivity {
-    Bundle extras;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

@@ -1,1 +1,0 @@
-[{"outputType":{"type":"MERGED_MANIFESTS"},"apkData":{"type":"MAIN","splits":[],"versionCode":83,"versionName":"4.4.2-SNAPSHOT","enabled":true,"outputFile":"Drop-In-debug.aar","fullName":"debug","baseName":"debug"},"path":"..\\..\\library_manifest\\debug\\AndroidManifest.xml","properties":{"packageId":"com.braintreepayments.api.dropin","split":""}}]

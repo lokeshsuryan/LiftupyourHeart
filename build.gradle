@@ -7,7 +7,7 @@ buildscript {
         jcenter()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.4.1'
+        classpath 'com.android.tools.build:gradle:3.5.1'
 
         classpath 'io.codearte.gradle.nexus:gradle-nexus-staging-plugin:0.5.3'
         classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.4'
@@ -34,7 +34,7 @@ ext {
     robotoTextViewVersion = '2.4.3'
     stickersVersion = '0.7.3'
     crashlyticsVersion = '2.8.0@aar'
-    retrofitVersion = "2.0.1"
+    retrofitVersion = "2.3.0"
     gsonVersion = "2.8.0"
     picasso ="2.5.2"
     glide ="3.7.0"
