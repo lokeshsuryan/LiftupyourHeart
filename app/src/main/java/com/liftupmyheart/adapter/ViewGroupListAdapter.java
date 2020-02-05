@@ -69,7 +69,6 @@ public class ViewGroupListAdapter extends RecyclerView.Adapter<ViewGroupListAdap
 
         Bundle bundle=new Bundle();
         bundle.putSerializable("groupDetail",groupDetailDao);
-
         fragment.setArguments(bundle);
         FragmentTransaction fragmentTransaction = fm.beginTransaction();
 // replace the FrameLayout with new Fragment

@@ -22,7 +22,8 @@ public class GroupDetailDao implements Serializable {
     @SerializedName("admin_id")
     @Expose
     private String admin_id;
-
+    @SerializedName("participants")
+    @Expose
     private ArrayList<Participants> participants;
 
     public String getLastPayment ()

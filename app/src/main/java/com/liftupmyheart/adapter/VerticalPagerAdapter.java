@@ -17,7 +17,7 @@ import com.liftupmyheart.activity.R;
 
 
 /**
- * Created by GIGAMOLE on 7/27/16.
+ * Created by Lokesh Kumar on 7/27/19.
  */
 public class VerticalPagerAdapter extends PagerAdapter {
 
@@ -84,22 +84,12 @@ public class VerticalPagerAdapter extends PagerAdapter {
                 planType = 0;
                 context.makePayment("30", String.valueOf(planId), String.valueOf(planType), "Parish Plan monthly");
 
-                // context.launchDropIn("30",planId,planType,"Parish Plan monthly");
                 //$30 payment yearly
             } else if (position == 2) {
                 planId = 2;
                 planType = 1;
-
-                Intent intent = new Intent(context, PayPal.class);
-                intent.putExtra("amount", "350");
-                intent.putExtra("planId", planId);
-                intent.putExtra("planType", planType);
-                intent.putExtra("planName", "Parish Plan Yearly");
-                context.startActivity(intent);
-
                 context.makePayment("350", String.valueOf(planId), String.valueOf(planType), "Parish Plan Yearly");
 
-                //context.launchDropIn("350",planId,planType,"Parish Plan Yearly");
                 //$350 payment yearly
             }
 
@@ -119,9 +109,6 @@ public class VerticalPagerAdapter extends PagerAdapter {
                 planId = 2;
                 planType = 1;
                 context.makePayment("35", String.valueOf(planId), String.valueOf(planType), "Heart One yearly");
-
-
-                //context.launchDropIn("2.95",planId,planType,"Heart One yearly");
                 //$35 payment yearly
             }
 

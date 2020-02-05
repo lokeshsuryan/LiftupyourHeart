@@ -11,7 +11,7 @@ import com.liftupmyheart.activity.BrowsePlan;
 import com.liftupmyheart.activity.R;
 
 /**
- * Created by GIGAMOLE on 7/27/16.
+ * Created by Lokesh Kumar on 7/27/19.
  */
 public class HorizontalPagerAdapter extends PagerAdapter {
 

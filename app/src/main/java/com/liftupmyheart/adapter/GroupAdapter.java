@@ -1,12 +1,15 @@
 package com.liftupmyheart.adapter;
 
 import android.app.Activity;
+import android.content.ActivityNotFoundException;
 import android.content.Intent;
+import android.net.Uri;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
+import android.widget.Toast;
 
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -71,16 +74,38 @@ public class GroupAdapter extends RecyclerView.Adapter<GroupAdapter.Holder> {
         invite.setName(data.getName());
         invite.setUserId(data.getId());
         if (!lists.get(pos).isInvite()) {
-            Intent share = new Intent(android.content.Intent.ACTION_SEND);
+                Uri contentUri = Uri.parse("android.resource://" + mContext.getPackageName() + "/drawable/" + "ic_launcher");
+
+                StringBuilder msg = new StringBuilder();
+                msg.append("Hey, Download this awesome app lift up my heart!");
+                msg.append("\n");
+                msg.append("https://play.google.com/store/apps/details?id=com.liftupmyheart.liftupyourheart&hl=en"); //example :com.package.name
+
+                if (contentUri != null) {
+                    Intent shareIntent = new Intent();
+                    shareIntent.setAction(Intent.ACTION_SEND);
+                    shareIntent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION); // temp permission for receiving app to read this file
+                    shareIntent.setType("*/*");
+                    shareIntent.putExtra(android.content.Intent.EXTRA_TEXT, msg.toString());
+                    shareIntent.putExtra(Intent.EXTRA_STREAM, contentUri);
+                    try {
+                        mContext.startActivity(Intent.createChooser(shareIntent, "Share via"));
+                    } catch (ActivityNotFoundException e) {
+                        Toast.makeText(mContext, "No App Available", Toast.LENGTH_SHORT).show();
+                    }
+                }
+            }
+
+
+           /* Intent share = new Intent(android.content.Intent.ACTION_SEND);
             share.setType("text/plain");
             share.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
             // Add data to the intent, the receiving app will decide
             // what to do with it.
             share.putExtra(Intent.EXTRA_SUBJECT, "LiftHart");
             share.putExtra(Intent.EXTRA_TEXT, "lifthart.com");
-            mContext.startActivity(Intent.createChooser(share, "Share link!"));
+            mContext.startActivity(Intent.createChooser(share, "Share link!"));*/
         }
-    }
 
 
     class Holder extends RecyclerView.ViewHolder {

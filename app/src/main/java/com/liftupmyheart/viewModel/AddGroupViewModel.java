@@ -226,6 +226,7 @@ public class AddGroupViewModel {
                 if (response.code() == 200) {
                     if (response.body().getResponse() == 1) {
                         Utills.showSnackToast(response.body().getMessage(), mContext);
+                        createGroupFragment.getFragmentManager().popBackStack();
                     }
                 }else{
                     Utills.showSnackToast(mContext.getResources().getString(R.string.server_error),mContext);

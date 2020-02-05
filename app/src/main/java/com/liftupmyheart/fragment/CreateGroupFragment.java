@@ -313,10 +313,10 @@ public class CreateGroupFragment extends Fragment implements View.OnClickListene
                     }
                 }
                 if(selectedMember.size()>0) {
-                    GroupItemDao groupItemDao = new GroupItemDao();
-                    groupItemDao.setId(dataUser.getId());
-                    groupItemDao.setName(dataUser.getName());
-                    selectedMember.add(groupItemDao);
+                    //GroupItemDao groupItemDao = new GroupItemDao();
+                    //groupItemDao.setId(dataUser.getId());
+                    //groupItemDao.setName(dataUser.getName());
+                    //selectedMember.add(groupItemDao);
                     if (groupName.isEmpty())
                         binding.groupnameET.setError("Enter Group Name");
                     else if (selectedMember.size() == 0)
